@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellbeing — NWU Student Hub</title>
+  <link rel="stylesheet" href="Style.CSS" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">NWU<span>Hub</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+        <li><a href="Wellbeing.html" class="active">Wellbeing</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero wellbeing-hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">Student Wellbeing</span>
+      <h1>You Matter.<br /><em>Get Support.</em></h1>
+      <p>Mental health, physical wellness, campus safety, and load-shedding support — all in one place.</p>
+    </div>
+  </header>
+
+  <!-- MOOD CHECK-IN -->
+  <section class="section mood-section">
+    <div class="container">
+      <div class="mood-card">
+        <h2>How are you feeling today?</h2>
+        <p>Check in with yourself. Your wellbeing matters.</p>
+        <div class="mood-options" id="moodOptions">
+          <button class="mood-btn" data-mood="great" title="Great">😊 Great</button>
+          <button class="mood-btn" data-mood="okay" title="Okay">😐 Okay</button>
+          <button class="mood-btn" data-mood="stressed" title="Stressed">😰 Stressed</button>
+          <button class="mood-btn" data-mood="struggling" title="Struggling">😔 Struggling</button>
+          <button class="mood-btn" data-mood="crisis" title="In Crisis">🆘 In Crisis</button>
+        </div>
+        <div id="moodResponse" class="mood-response hidden"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENTAL HEALTH -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Mental Health Support</h2>
+        <p>Professional counselling is available free of charge to all registered NWU students.</p>
+      </div>
+      <div class="support-grid">
+        <div class="support-card mental">
+          <div class="support-top">
+            <span class="support-icon">🧠</span>
+            <span class="campus-badge pchef-tag">Potchefstroom</span>
+          </div>
+          <h4>Student Counselling & Development</h4>
+          <p>Building G18, Potchefstroom Campus</p>
+          <p>📞 018 299 1111</p>
+          <p>🕐 Mon–Fri: 07:30–16:00</p>
+          <p class="support-note">Walk-ins welcome. Confidential sessions available in English and Afrikaans.</p>
+        </div>
+        <div class="support-card mental">
+          <div class="support-top">
+            <span class="support-icon">🧠</span>
+            <span class="campus-badge mahik-tag">Mahikeng</span>
+          </div>
+          <h4>Student Counselling & Development</h4>
+          <p>Administration Block, Mahikeng Campus</p>
+          <p>📞 018 389 2222</p>
+          <p>🕐 Mon–Fri: 08:00–15:30</p>
+          <p class="support-note">Sessions available in English, Setswana, and Afrikaans.</p>
+        </div>
+        <div class="support-card mental">
+          <div class="support-top">
+            <span class="support-icon">🧠</span>
+            <span class="campus-badge vander-tag">Vanderbijlpark</span>
+          </div>
+          <h4>Student Counselling & Development</h4>
+          <p>Ebenhaeser Building, Vaal Campus</p>
+          <p>📞 016 910 3333</p>
+          <p>🕐 Mon–Fri: 08:00–16:00</p>
+          <p class="support-note">Walk-ins welcome. Online sessions also available.</p>
+        </div>
+      </div>
+
+      <!-- NATIONAL CRISIS LINES -->
+      <div class="crisis-box">
+        <h3>🆘 National Crisis Lines</h3>
+        <p>If you or someone you know is in immediate danger, please reach out:</p>
+        <div class="crisis-grid">
+          <div class="crisis-item">
+            <strong>SADAG 24-hr Helpline</strong>
+            <a href="tel:0800456789">0800 456 789</a>
+            <span>Free. 24/7.</span>
+          </div>
+          <div class="crisis-item">
+            <strong>Suicide Crisis Line</strong>
+            <a href="tel:0800567567">0800 567 567</a>
+            <span>Free. 24/7.</span>
+          </div>
+          <div class="crisis-item">
+            <strong>Lifeline South Africa</strong>
+            <a href="tel:0861322322">086 132 2322</a>
+            <span>24-hour support.</span>
+          </div>
+          <div class="crisis-item">
+            <strong>Emergency Services</strong>
+            <a href="tel:10177">10177 / 112</a>
+            <span>Police & Ambulance.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOAD SHEDDING GUIDE -->
+  <section class="section loadshed-section" id="loadshedding">
+    <div class="container">
+      <div class="section-header">
+        <h2>⚡ Load-Shedding Survival Guide</h2>
+        <p>Study smarter during load-shedding with these campus resources.</p>
+      </div>
+
+      <div class="ls-tabs">
+        <button class="ls-tab active" data-tab="potchefstroom">Potchefstroom</button>
+        <button class="ls-tab" data-tab="mahikeng">Mahikeng</button>
+        <button class="ls-tab" data-tab="vanderbijlpark">Vanderbijlpark</button>
+      </div>
+
+      <div class="ls-content" id="lsContent">
+        <div class="ls-panel active" id="ls-potchefstroom">
+          <div class="ls-grid">
+            <div class="ls-card">
+              <h4>📍 Powered Study Spots</h4>
+              <ul>
+                <li>Ferdinand Postma Library (generator backup)</li>
+                <li>Fanie Ferreira Student Centre</li>
+                <li>Engineering Building — computer labs</li>
+                <li>Business School Foyer</li>
+              </ul>
+            </div>
+            <div class="ls-card">
+              <h4>📶 Wi-Fi Hotspots</h4>
+              <ul>
+                <li>Library — full Wi-Fi during outages</li>
+                <li>Student Centre ground floor</li>
+                <li>Main gate security booth area</li>
+              </ul>
+            </div>
+            <div class="ls-card">
+              <h4>💡 Tips</h4>
+              <ul>
+                <li>Download lecture slides before outages</li>
+                <li>Use the EskomSePush app for your area schedule</li>
+                <li>Charge all devices during Stage 0 periods</li>
+                <li>eFundi assignments: request extensions proactively</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ls-panel" id="ls-mahikeng">
+          <div class="ls-grid">
+            <div class="ls-card">
+              <h4>📍 Powered Study Spots</h4>
+              <ul>
+                <li>Main Campus Library</li>
+                <li>Administration Block — lobby area</li>
+                <li>Law Faculty computer lab</li>
+              </ul>
+            </div>
+            <div class="ls-card">
+              <h4>📶 Wi-Fi Hotspots</h4>
+              <ul>
+                <li>Library entrance — reliable signal</li>
+                <li>Student Union building</li>
+                <li>Cafeteria area (limited hours)</li>
+              </ul>
+            </div>
+            <div class="ls-card">
+              <h4>💡 Tips</h4>
+              <ul>
+                <li>Mahikeng uses Eskom Zone 4 — check schedule</li>
+                <li>Some areas have 4–6 hour outages</li>
+                <li>Power banks highly recommended</li>
+                <li>Group study in library for shared resources</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="ls-panel" id="ls-vanderbijlpark">
+          <div class="ls-grid">
+            <div class="ls-card">
+              <h4>📍 Powered Study Spots</h4>
+              <ul>
+                <li>Vaal Campus Library (generator)</li>
+                <li>Ebenhaeser Building computer labs</li>
+                <li>Engineering Block — 24hr lab</li>
+                <li>Student Cafeteria (backup power)</li>
+              </ul>
+            </div>
+            <div class="ls-card">
+              <h4>📶 Wi-Fi Hotspots</h4>
+              <ul>
+                <li>Library — full campus Wi-Fi backup</li>
+                <li>Engineering courtyard</li>
+                <li>Vaal Mall nearby (1.5km) — free Wi-Fi</li>
+              </ul>
+            </div>
+            <div class="ls-card">
+              <h4>💡 Tips</h4>
+              <ul>
+                <li>Vanderbijlpark often in Zone 2 or 6</li>
+                <li>Industrial area means some grid priority</li>
+                <li>Use offline study apps: Anki, Notion</li>
+                <li>Check with residence office for generator hours</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHYSICAL WELLNESS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Physical Wellness</h2>
+        <p>Take care of your body — campus health and sport facilities.</p>
+      </div>
+      <div class="support-grid">
+        <div class="support-card physical">
+          <span class="support-icon">🏥</span>
+          <h4>Campus Health Clinic — Potch</h4>
+          <p>Primary healthcare, contraception, HIV testing, and referrals. Free to registered students.</p>
+          <p>📞 018 299 1234</p>
+        </div>
+        <div class="support-card physical">
+          <span class="support-icon">🏥</span>
+          <h4>Campus Health Clinic — Mahikeng</h4>
+          <p>Health services including chronic medication support and sexual health services.</p>
+          <p>📞 018 389 2100</p>
+        </div>
+        <div class="support-card physical">
+          <span class="support-icon">🏥</span>
+          <h4>Campus Health Clinic — Vaal</h4>
+          <p>Walk-in clinic for students. Referral letters, basic treatment, and wellness programmes.</p>
+          <p>📞 016 910 3200</p>
+        </div>
+        <div class="support-card physical">
+          <span class="support-icon">🏋️</span>
+          <h4>Sport & Recreation</h4>
+          <p>All campuses have gyms, sports fields, and various sporting codes. Register through the Sport Bureau on your campus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">NWU<span>Hub</span></span>
+        <p>An unofficial student resource platform for NWU students.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Resources.html">Resources</a></li>
+          <li><a href="Wellbeing.html">Wellbeing</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NWU Student Hub. Created for COMS313 Group Assignment.</p>
+    </div>
+  </footer>
+
+  <script src="Wellbeing.JS"></script>
+  <script src="Main.JS"></script>
+</body>
+</html>
+      

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — NWU Student Hub</title>
+  <link rel="stylesheet" href="Style.CSS" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">NWU<span>Hub</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+        <li><a href="Wellbeing.html">Wellbeing</a></li>
+        <li><a href="Contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero contact-hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">Get In Touch</span>
+      <h1>Contact &amp;<br /><em>Emergency Info</em></h1>
+      <p>Campus contacts, emergency numbers, and a feedback form for all NWU students.</p>
+    </div>
+  </header>
+
+  <!-- EMERGENCY NUMBERS -->
+  <section class="section emergency-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>🚨 Emergency Numbers</h2>
+        <p>Save these numbers now. In an emergency, every second counts.</p>
+      </div>
+      <div class="emergency-grid">
+        <div class="emerg-card red">
+          <span class="emerg-icon">🚔</span>
+          <h4>Campus Security</h4>
+          <div class="emerg-numbers">
+            <div><span>Potchefstroom:</span><a href="tel:0182991111">018 299 1111</a></div>
+            <div><span>Mahikeng:</span><a href="tel:0183892000">018 389 2000</a></div>
+            <div><span>Vaal:</span><a href="tel:0169103000">016 910 3000</a></div>
+          </div>
+        </div>
+        <div class="emerg-card orange">
+          <span class="emerg-icon">🚑</span>
+          <h4>Medical Emergency</h4>
+          <div class="emerg-numbers">
+            <div><span>Ambulance:</span><a href="tel:10177">10177</a></div>
+            <div><span>Cell (any network):</span><a href="tel:112">112</a></div>
+            <div><span>ER24:</span><a href="tel:084124">084 124</a></div>
+          </div>
+        </div>
+        <div class="emerg-card purple">
+          <span class="emerg-icon">💜</span>
+          <h4>Mental Health Crisis</h4>
+          <div class="emerg-numbers">
+            <div><span>SADAG:</span><a href="tel:0800456789">0800 456 789</a></div>
+            <div><span>Lifeline:</span><a href="tel:0861322322">086 132 2322</a></div>
+            <div><span>Suicide Line:</span><a href="tel:0800567567">0800 567 567</a></div>
+          </div>
+        </div>
+        <div class="emerg-card blue">
+          <span class="emerg-icon">🔵</span>
+          <h4>SAPS & Fire</h4>
+          <div class="emerg-numbers">
+            <div><span>Police:</span><a href="tel:10111">10111</a></div>
+            <div><span>Fire:</span><a href="tel:10177">10177</a></div>
+            <div><span>GBV Helpline:</span><a href="tel:0800428428">0800 428 428</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPUS CONTACTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Campus Contact Directory</h2>
+        <p>Key departments across all three NWU campuses.</p>
+      </div>
+      <div class="contact-tabs">
+        <button class="ct-tab active" data-ctab="potchefstroom">Potchefstroom</button>
+        <button class="ct-tab" data-ctab="mahikeng">Mahikeng</button>
+        <button class="ct-tab" data-ctab="vanderbijlpark">Vanderbijlpark</button>
+      </div>
+
+      <div class="ct-panel active" id="ct-potchefstroom">
+        <div class="contact-table-wrap">
+          <table class="contact-table">
+            <thead><tr><th>Department</th><th>Phone</th><th>Email</th></tr></thead>
+            <tbody>
+              <tr><td>General Switchboard</td><td><a href="tel:0860169698">086 016 9698</a></td><td>info@nwu.ac.za</td></tr>
+              <tr><td>Student Affairs</td><td><a href="tel:0182992111">018 299 2111</a></td><td>studentaffairs.pch@nwu.ac.za</td></tr>
+              <tr><td>Financial Aid</td><td><a href="tel:0182993000">018 299 3000</a></td><td>financialaid.pch@nwu.ac.za</td></tr>
+              <tr><td>Admissions & Registration</td><td><a href="tel:0182994000">018 299 4000</a></td><td>admissions.pch@nwu.ac.za</td></tr>
+              <tr><td>IT Help Desk</td><td><a href="tel:0182995000">018 299 5000</a></td><td>ithelpdesk@nwu.ac.za</td></tr>
+              <tr><td>Library</td><td><a href="tel:0182996000">018 299 6000</a></td><td>library.pch@nwu.ac.za</td></tr>
+              <tr><td>Campus Health Clinic</td><td><a href="tel:0182991234">018 299 1234</a></td><td>clinic.pch@nwu.ac.za</td></tr>
+              <tr><td>Student Counselling</td><td><a href="tel:0182991235">018 299 1235</a></td><td>counselling.pch@nwu.ac.za</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="ct-panel" id="ct-mahikeng">
+        <div class="contact-table-wrap">
+          <table class="contact-table">
+            <thead><tr><th>Department</th><th>Phone</th><th>Email</th></tr></thead>
+            <tbody>
+              <tr><td>General Switchboard</td><td><a href="tel:0183892000">018 389 2000</a></td><td>info@nwu.ac.za</td></tr>
+              <tr><td>Student Affairs</td><td><a href="tel:0183892100">018 389 2100</a></td><td>studentaffairs.mah@nwu.ac.za</td></tr>
+              <tr><td>Financial Aid</td><td><a href="tel:0183892200">018 389 2200</a></td><td>financialaid.mah@nwu.ac.za</td></tr>
+              <tr><td>Admissions & Registration</td><td><a href="tel:0183892300">018 389 2300</a></td><td>admissions.mah@nwu.ac.za</td></tr>
+              <tr><td>IT Help Desk</td><td><a href="tel:0183892400">018 389 2400</a></td><td>ithelpdesk@nwu.ac.za</td></tr>
+              <tr><td>Library</td><td><a href="tel:0183892500">018 389 2500</a></td><td>library.mah@nwu.ac.za</td></tr>
+              <tr><td>Campus Health Clinic</td><td><a href="tel:0183892100">018 389 2100</a></td><td>clinic.mah@nwu.ac.za</td></tr>
+              <tr><td>Student Counselling</td><td><a href="tel:0183892222">018 389 2222</a></td><td>counselling.mah@nwu.ac.za</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="ct-panel" id="ct-vanderbijlpark">
+        <div class="contact-table-wrap">
+          <table class="contact-table">
+            <thead><tr><th>Department</th><th>Phone</th><th>Email</th></tr></thead>
+            <tbody>
+              <tr><td>General Switchboard</td><td><a href="tel:0169103000">016 910 3000</a></td><td>info@nwu.ac.za</td></tr>
+              <tr><td>Student Affairs</td><td><a href="tel:0169103100">016 910 3100</a></td><td>studentaffairs.vaal@nwu.ac.za</td></tr>
+              <tr><td>Financial Aid</td><td><a href="tel:0169103111">016 910 3111</a></td><td>financialaid.vaal@nwu.ac.za</td></tr>
+              <tr><td>Admissions & Registration</td><td><a href="tel:0169103200">016 910 3200</a></td><td>admissions.vaal@nwu.ac.za</td></tr>
+              <tr><td>IT Help Desk</td><td><a href="tel:0169103300">016 910 3300</a></td><td>ithelpdesk@nwu.ac.za</td></tr>
+              <tr><td>Library</td><td><a href="tel:0169103400">016 910 3400</a></td><td>library.vaal@nwu.ac.za</td></tr>
+              <tr><td>Campus Health Clinic</td><td><a href="tel:0169103200">016 910 3200</a></td><td>clinic.vaal@nwu.ac.za</td></tr>
+              <tr><td>Student Counselling</td><td><a href="tel:0169103333">016 910 3333</a></td><td>counselling.vaal@nwu.ac.za</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section form-section">
+    <div class="container">
+      <div class="form-wrap">
+        <div class="form-intro">
+          <h2>Send Us Feedback</h2>
+          <p>Have a suggestion, found an error, or want to share your campus experience? We'd love to hear from you.</p>
+          <div class="form-note">
+            <strong>Note:</strong> This is a student project platform. For urgent academic or personal matters, please contact your campus directly using the numbers above.
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your full name" autocomplete="name" />
+            <span class="field-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="studentNum">Student Number *</label>
+            <input type="text" id="studentNum" name="studentNum" placeholder="e.g. 12345678" maxlength="8" />
+            <span class="field-error" id="numError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">NWU Email *</label>
+            <input type="email" id="email" name="email" placeholder="12345678@mynwu.ac.za" autocomplete="email" />
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="campus">Campus *</label>
+            <select id="campus" name="campus">
+              <option value="">-- Select your campus --</option>
+              <option value="potchefstroom">Potchefstroom</option>
+              <option value="mahikeng">Mahikeng</option>
+              <option value="vanderbijlpark">Vanderbijlpark</option>
+            </select>
+            <span class="field-error" id="campusError"></span>
+          </div>
+          <div class="form-group">
+            <label for="category">Category *</label>
+            <select id="category" name="category">
+              <option value="">-- Select a category --</option>
+              <option value="suggestion">Suggestion</option>
+              <option value="error">Report an Error</option>
+              <option value="resource">Request a Resource</option>
+              <option value="feedback">General Feedback</option>
+            </select>
+            <span class="field-error" id="catError"></span>
+          </div>
+          <div class="form-group full">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." maxlength="1000"></textarea>
+            <span class="char-count"><span id="charCount">0</span>/1000</span>
+            <span class="field-error" id="msgError"></span>
+          </div>
+          <div class="form-group full">
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Feedback</button>
+          </div>
+          <div id="formSuccess" class="form-success hidden">
+            ✅ Thank you! Your feedback has been submitted. We appreciate your input.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">NWU<span>Hub</span></span>
+        <p>An unofficial student resource platform for NWU students.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Resources.html">Resources</a></li>
+          <li><a href="Wellbeing.html">Wellbeing</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NWU Student Hub. Created for COMS313 Group Assignment.</p>
+    </div>
+  </footer>
+
+  <script src="Contact.JS"></script>
+  <script src="Main.JS"></script>
+</body>
+</html>

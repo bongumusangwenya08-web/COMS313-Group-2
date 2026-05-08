@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources — NWU Student Hub</title>
+  <link rel="stylesheet" href="Style.CSS" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">NWU<span>Hub</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Resources.html" class="active">Resources</a></li>
+        <li><a href="Wellbeing.html">Wellbeing</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <header class="page-hero resources-hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">All Campuses</span>
+      <h1>Student <em>Resources</em></h1>
+      <p>Academic tools, financial support, accommodation, and more — all in one place.</p>
+    </div>
+  </header>
+ 
+  <!-- FILTER -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Browse Resources</h2>
+        <p>Filter by category or campus to find exactly what you need.</p>
+      </div>
+ 
+      <div class="resource-filters">
+        <div class="filter-row">
+          <label>Category:</label>
+          <div class="campus-filter">
+            <button class="filter-btn active" data-cat="all">All</button>
+            <button class="filter-btn" data-cat="academic">Academic</button>
+            <button class="filter-btn" data-cat="finance">Finance</button>
+            <button class="filter-btn" data-cat="housing">Housing</button>
+            <button class="filter-btn" data-cat="tech">Tech & Connectivity</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <label>Campus:</label>
+          <div class="campus-filter">
+            <button class="filter-btn active" data-campus-filter="all">All</button>
+            <button class="filter-btn" data-campus-filter="potchefstroom">Potchefstroom</button>
+            <button class="filter-btn" data-campus-filter="mahikeng">Mahikeng</button>
+            <button class="filter-btn" data-campus-filter="vanderbijlpark">Vanderbijlpark</button>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="resource-grid" id="resourceGrid">
+ 
+        <!-- ACADEMIC -->
+        <div class="resource-card" data-cat="academic" data-campus="all" id="academic">
+          <span class="res-icon">📚</span>
+          <h4>NWU Library</h4>
+          <p>Access online journals, e-books, past exam papers, and research databases through the NWU library portal.</p>
+          <span class="res-tag academic-tag">Academic</span>
+          <span class="res-tag all-campus-tag">All Campuses</span>
+          <a href="https://library.nwu.ac.za" target="_blank" class="btn btn-sm">Visit Library →</a>
+        </div>
+ 
+        <div class="resource-card" data-cat="academic" data-campus="all">
+          <span class="res-icon">💻</span>
+          <h4>eFundi Learning Platform</h4>
+          <p>Access your course materials, submit assignments, write tests, and communicate with lecturers on eFundi.</p>
+          <span class="res-tag academic-tag">Academic</span>
+          <span class="res-tag all-campus-tag">All Campuses</span>
+          <a href="https://efundi.nwu.ac.za" target="_blank" class="btn btn-sm">Go to eFundi →</a>
+        </div>
+ 
+        <div class="resource-card" data-cat="academic" data-campus="all">
+          <span class="res-icon">📝</span>
+          <h4>Student Academic Support</h4>
+          <p>Peer tutoring, academic writing centres, and supplemental instruction are available across all campuses.</p>
+          <span class="res-tag academic-tag">Academic</span>
+          <span class="res-tag all-campus-tag">All Campuses</span>
+          <a href="https://services.nwu.ac.za/ctl" class="btn btn-sm">Find on Campus →</a>
+        </div>
+ 
+        <!-- FINANCE -->
+        <div class="resource-card" data-cat="finance" data-campus="all" id="finance">
+          <span class="res-icon">💳</span>
+          <h4>NSFAS Funding</h4>
+          <p>Apply for the National Student Financial Aid Scheme. Covers tuition, accommodation, and living allowances for qualifying students.</p>
+          <span class="res-tag finance-tag">Finance</span>
+          <span class="res-tag all-campus-tag">All Campuses</span>
+          <a href="https://www.nsfas.org.za" target="_blank" class="btn btn-sm">Apply on NSFAS →</a>
+        </div>
+ 
+        <div class="resource-card" data-cat="finance" data-campus="all">
+          <span class="res-icon">🎓</span>
+          <h4>NWU Bursaries</h4>
+          <p>NWU offers merit and need-based bursaries. Contact the Financial Aid office on your campus for a full list and application process.</p>
+          <span class="res-tag finance-tag">Finance</span>
+          <span class="res-tag all-campus-tag">All Campuses</span>
+          <a href="https://www.nwu.ac.za/financial-aid" target="_blank" class="btn btn-sm">View Bursaries →</a>
+        </div>
+ 
+        <div class="resource-card" data-cat="finance" data-campus="potchefstroom">
+          <span class="res-icon">🏦</span>
+          <h4>Financial Aid Office — Potch</h4>
+          <p>Located in the Ferdinand Postma Building. Open Mon–Fri 08:00–16:00. Walk-ins and appointments accepted.</p>
+          <span class="res-tag finance-tag">Finance</span>
+          <span class="res-tag pchef-tag">Potchefstroom</span>
+        </div>
+ 
+        <div class="resource-card" data-cat="finance" data-campus="mahikeng">
+          <span class="res-icon">🏦</span>
+          <h4>Financial Aid Office — Mahikeng</h4>
+          <p>Located in the Administration Block. Contact: 018 389 2000. Open Mon–Fri 08:00–15:30.</p>
+          <span class="res-tag finance-tag">Finance</span>
+          <span class="res-tag mahik-tag">Mahikeng</span>
+        </div>
+ 
+        <div class="resource-card" data-cat="finance" data-campus="vanderbijlpark">
+          <span class="res-icon">🏦</span>
+          <h4>Financial Aid Office — Vaal</h4>
+          <p>Located in the Ebenhaeser Building. Contact: 016 910 3111. Open Mon–Fri 08:00–16:00.</p>
+          <span class="res-tag finance-tag">Finance</span>
+          <span class="res-tag vander-tag">Vanderbijlpark</span>
+        </div>
+ 
+        <!-- HOUSING -->
+        <div class="resource-card" data-cat="housing" data-campus="all" id="housing">
+          <span class="res-icon">🏠</span>
+          <h4>NWU Residence Applications</h4>
+          <p>Apply for on-campus accommodation through the NWU accommodation portal. Priority given to first-years and funded students.</p>
+          <span class="res-tag housing-tag">Housing</span>
+          <span class="res-tag all-campus-tag">All Campuses</span>
+          <a href="https://www.nwu.ac.za/accommodation" target="_blank" class="btn btn-sm">Apply Now →</a>
+        </div>
+ 
+        <div class="resource-card" data-cat="housing" data-campus="potchefstroom">
+          <span class="res-icon">🏘️</span>
+          <h4>Off-Campus Housing — Potch</h4>
+          <p>Popular areas include Potchefstroom CBD, Grimbeeckpark, and Bult area. Many student-friendly rentals near campus.</p>
+          <span class="res-tag housing-tag">Housing</span>
+          <span class="res-tag pchef-tag">Potchefstroom</span>
+        </div>
+ 
+        <div class="resource-card" data-cat="housing" data-campus="mahikeng">
+          <span class="res-icon">🏘️</span>
+          <h4>Off-Campus Housing — Mahikeng</h4>
+          <p>Contact the Student Affairs office for a list of approved off-campus accommodation near the Mahikeng campus.</p>
+          <span class="res-tag housing-tag">Housing</span>
+          <span class="res-tag mahik-tag">Mahikeng</span>
+        </div>
+ 
+        <div class="resource-card" data-cat="housing" data-campus="vanderbijlpark">
+          <span class="res-icon">🏘️</span>
+          <h4>Off-Campus Housing — Vaal</h4>
+          <p>Many students stay in Vanderbijlpark, Vereeniging, or Meyerton. The Vaal campus is well connected by public transport.</p>
+          <span class="res-tag housing-tag">Housing</span>
+          <span class="res-tag vander-tag">Vanderbijlpark</span>
+        </div>
+ 
+        <!-- TECH -->
+        <div class="resource-card" data-cat="tech" data-campus="all">
+          <span class="res-icon">📶</span>
+          <h4>Campus Wi-Fi</h4>
+          <p>Connect to <strong>NWU-WiFi</strong> using your student credentials. Available in all academic buildings, libraries, and most residences.</p>
+          <span class="res-tag tech-tag">Tech</span>
+          <span class="res-tag all-campus-tag">All Campuses</span>
+        </div>
+ 
+        <div class="resource-card" data-cat="tech" data-campus="all">
+          <span class="res-icon">🖥️</span>
+          <h4>Computer Labs</h4>
+          <p>Free access to computer labs with Microsoft Office, internet, and printing. Check your campus timetable for lab availability.</p>
+          <span class="res-tag tech-tag">Tech</span>
+          <span class="res-tag all-campus-tag">All Campuses</span>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">NWU<span>Hub</span></span>
+        <p>An unofficial student resource platform for NWU students.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Resources.html">Resources</a></li>
+          <li><a href="Wellbeing.html">Wellbeing</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NWU Student Hub. Created for COMS313 Group Assignment.</p>
+    </div>
+  </footer>
+ 
+  <script src="Resources.JS"></script>
+  <script src="Main.JS"></script>
+</body>
+</html>
